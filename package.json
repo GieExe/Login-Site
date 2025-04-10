@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ./src",
+    "test": "node ./run-tests.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.4",
