@@ -1,5 +1,4 @@
 {
-  
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
     "dev": {
@@ -15,7 +14,7 @@
       "cache": true
     }
   },
-  
+
   "plugins": [
     {
       "plugin": "@nx/eslint/plugin",
