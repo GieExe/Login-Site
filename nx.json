@@ -1,0 +1,36 @@
+{
+  
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "targetDefaults": {
+    "dev": {
+      "cache": true
+    },
+    "build": {
+      "cache": true
+    },
+    "lint": {
+      "cache": true
+    },
+    "test": {
+      "cache": true
+    }
+  },
+  
+  "plugins": [
+    {
+      "plugin": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "eslint:lint"
+      }
+    },
+    {
+      "plugin": "@nx/next/plugin",
+      "options": {
+        "buildTargetName": "next:build",
+        "devTargetName": "dev",
+        "startTargetName": "start"
+      }
+    }
+  ],
+  "nxCloudId": "67f72de4fec12479fe47716e"
+}
