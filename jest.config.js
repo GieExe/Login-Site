@@ -9,4 +9,7 @@ module.exports = {
       '<rootDir>/src/**/*.test.tsx',
     ],
     setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
+    transform: {
+      '^.+\\.(ts|tsx)?$': 'ts-jest',  // Force ts-jest to transform ts/tsx files
+    },
   };
